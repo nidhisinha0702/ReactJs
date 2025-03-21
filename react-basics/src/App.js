@@ -6,14 +6,15 @@ import { FirstComponent as FC, SecondComponent } from './components/MyComponent'
 import MC from './components/MyComponent';
 import HelloWorld from './components/HelloWorld';
 import Student from './components/Student';
-
+import Employee from './components/Employee';
+import User from './components/User';
 function App() {
 
-  // const student = {
-  //   firstName: "Nidhi",
-  //   lastName: "Kumari",
-  //   email:"nk@gmail.com"
-  // }
+  //  const student = {
+  //    firstName: "Nidhi",
+  //    lastName: "Kumari",
+  //    email:"nk@gmail.com"
+  //  }
   const skills = ['HTML','CSS','JavaScript'];
   return (
     <div className="App">
@@ -24,14 +25,16 @@ function App() {
       <SecondComponent />
       <MC />
       <HelloWorld /> */}
-      <Student 
-      data = {skills}
-      />
       {/* <Student 
+      data = {skills}
+      /> */}
+       {/* <Student 
       firstName = "Akash"
       lastName = "Sinha"
       email = "as@gmail.com"
       /> */}
+      {/* <Employee /> */}
+      <User />
     </div>
   );
 }
