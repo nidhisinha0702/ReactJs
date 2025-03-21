@@ -1,10 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import Welcome from './components/Welcome';
+import Greeting from './components/Greeting';
+import { FirstComponent as FC, SecondComponent } from './components/MyComponent';
+import MC from './components/MyComponent';
+import HelloWorld from './components/HelloWorld';
+import Student from './components/Student';
 
 function App() {
+
+  // const student = {
+  //   firstName: "Nidhi",
+  //   lastName: "Kumari",
+  //   email:"nk@gmail.com"
+  // }
+  const skills = ['HTML','CSS','JavaScript'];
   return (
     <div className="App">
-      <h1>Hello world</h1>
+      {/* <Welcome name="Nidhi"/>
+      <Welcome name="Kumari"/> */}
+      {/* <Greeting name="Nidhi" />
+      <FC />
+      <SecondComponent />
+      <MC />
+      <HelloWorld /> */}
+      <Student 
+      data = {skills}
+      />
+      {/* <Student 
+      firstName = "Akash"
+      lastName = "Sinha"
+      email = "as@gmail.com"
+      /> */}
     </div>
   );
 }
